@@ -1,0 +1,17 @@
+{
+  "tests": [
+    {
+      "name": "Get all versions",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": [
+        {
+          "version": "string",
+          "description": "string"
+        }
+      ],
+      "bodyMatcher": "partial"
+    }
+  ]
+}

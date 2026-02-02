@@ -1,30 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Rubik:wght@400;500;600&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 10 17% 5%;
-    --foreground: 0 0% 98%;
-    --card: 10 17% 8%;
-    --card-foreground: 0 0% 98%;
-    --popover: 10 17% 8%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 86% 43%;
+    --background: 0 0% 7%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 348 83% 47%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 9 72% 38%;
-    --secondary-foreground: 0 0% 100%;
-    --muted: 10 17% 15%;
-    --muted-foreground: 0 0% 63%;
-    --accent: 348 100% 50%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 348 83% 47%;
     --accent-foreground: 0 0% 100%;
+
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 10 17% 18%;
-    --input: 10 17% 18%;
-    --ring: 0 86% 43%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 348 83% 47%;
+
     --radius: 0.5rem;
   }
 }
@@ -33,35 +40,8 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
-    font-family: "Rubik", sans-serif;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 700;
-  }
-}
-
-@layer utilities {
-  .glow-text {
-    text-shadow: 0 0 10px rgba(220, 20, 60, 0.5);
-  }
-
-  .crimson-glow {
-    box-shadow: 0 0 20px rgba(220, 20, 60, 0.3);
-  }
-
-  .gradient-border {
-    position: relative;
-    background:
-      linear-gradient(var(--card), var(--card)) padding-box,
-      linear-gradient(135deg, #dc143c, #8b0000) border-box;
-    border: 2px solid transparent;
   }
 }
